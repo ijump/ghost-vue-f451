@@ -16,7 +16,7 @@ jobs:
     steps:
         - uses: actions/checkout@master
         - uses: actions/setup-node@master
-        - run: npm install
+        - run: npm install --force
         - run: npm run build
 
 
