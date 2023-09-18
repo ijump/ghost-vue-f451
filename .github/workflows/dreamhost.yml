@@ -12,3 +12,15 @@ jobs:
         username: 'ijump'
         reponame: 'ghost-vue-f451'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+
+      - name: sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+            server: kaboompress.com
+            username: animationbrunch
+            password: Animation4brunch#01
+            protocol: ftp
+            port: 21 # todo replace with your web hosts ftps port
+            server-dir: ./deployed_sites/ghost.fahrenheit451house.com/
+            local-dir: ./
+#             dangerous-clean-slate: true
