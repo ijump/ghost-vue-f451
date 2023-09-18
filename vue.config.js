@@ -1,7 +1,7 @@
 const ghostHost = 'https://ghostblog.com'
 
 module.exports = {
-  publicPath: '/GhostVueF451/',
+  publicPath: '/ghost-vue-f451/',
   lintOnSave: true,
   devServer: {
     inline: true,
