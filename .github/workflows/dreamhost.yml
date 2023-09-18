@@ -14,11 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: deploy
-        # - uses: actions/checkout@master
-        # - uses: actions/setup-node@master
-        # - run: npm install
-        # - run: npm run build
+      - name: npmbuild
+        uses: actions/checkout@master
+        run: npm install
+        run: npm run build
 
 
 
